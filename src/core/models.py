@@ -1,6 +1,8 @@
+from django.conf import settings
 from django.contrib.auth.models import (
     AbstractBaseUser,
     BaseUserManager,
+    Group,
     PermissionsMixin,
 )
 from django.db import models
@@ -127,3 +129,35 @@ class Configuration(models.Model):
         max_length=100,
     )
     is_delete = models.BooleanField()
+
+
+class Menu(models.Model):
+    key = models.CharField(_("Key"), max_length=100, unique=True)
+    icon = models.CharField(max_length=50, blank=True, null=True)
+    url = models.CharField(max_length=255, blank=True, null=True)
+    order = models.PositiveIntegerField(default=0)
+    parent = models.ForeignKey(
+        "self", on_delete=models.CASCADE, blank=True, null=True, related_name="children"
+    )
+    groups = models.ManyToManyField(
+        Group, blank=True, help_text="Roles que pueden ver este menú"
+    )
+    is_active = models.BooleanField(default=True)
+
+    class Meta:
+        ordering = ["order"]
+
+    def __str__(self):
+        return self.key
+
+
+class Translation(models.Model):
+    key = models.CharField(max_length=200)
+    language = models.CharField(max_length=10, choices=settings.LANGUAGES)
+    text = models.TextField()
+
+    class Meta:
+        unique_together = ("key", "language")
+
+    def __str__(self):
+        return f"{self.key} ({self.language})"

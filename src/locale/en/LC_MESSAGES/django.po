@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-13 22:55-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: core/models.py:45
+msgid "Nombres"
+msgstr ""
+
+#: core/models.py:47
+msgid "Apellidos"
+msgstr ""
+
+#: core/models.py:49
+msgid "Número de documento"
+msgstr ""
+
+#: core/models.py:51
+msgid "Tipo de documento"
+msgstr ""
+
+#: core/models.py:58
+msgid "sexo"
+msgstr ""
+
+#: core/models.py:94
+msgid "Número de teléfono"
+msgstr ""
+
+#: core/models.py:100
+msgid "Calle principal"
+msgstr ""
+
+#: core/models.py:103
+msgid "Calle secundaria"
+msgstr ""
+
+#: core/models.py:104
+msgid "Referencia"
+msgstr ""
+
+#: core/models.py:105
+msgid "Número de domicilio"
+msgstr ""
+
+#: core/models.py:107
+msgid "Ciudad"
+msgstr ""
+
+#: core/models.py:111
+msgid "Pais"
+msgstr ""
+
+#: core/models.py:115
+msgid "Provincia"
+msgstr ""
+
+#: core/models.py:124
+msgid "Valor"
+msgstr ""
+
+#: core/models.py:127
+msgid "Grupo"
+msgstr ""
+
+#: core/models.py:133
+msgid "Key"
+msgstr ""
+
+#: medical_appointments/models.py:15
+msgid "Código"
+msgstr ""
+
+#: medical_appointments/models.py:17
+msgid "Nombre"
+msgstr ""
+
+#: medical_appointments/models.py:19
+msgid "Descripción"
+msgstr ""
+
+#: medical_appointments/models.py:33
+msgid "Día de la semana"
+msgstr ""
+
+#: medical_appointments/models.py:67
+msgid "estado"
+msgstr ""
